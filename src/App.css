@@ -1,38 +1,89 @@
 .App {
   text-align: center;
+  margin-top: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.AddTask {
+  margin-bottom: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+  padding: 5px;
+  margin-right: 10px;
+  padding: 10px 5px;
+  border-radius: 5px;
+  width: 100%;
+}
+li{
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.TaskList {
+width: 500px;
+margin: 0 auto ;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.TaskActions {
+  margin-top: 10px;
+}
+
+.Filters {
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.Filters button {
+  margin-right: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding-bottom: 20px;
+}
+
+.addBtn{
+background-color: #0084f5;
+border: none;
+cursor: pointer;
+padding: 10px 20px;
+border-radius: 5px;
+
+}
+.btnDel{
+  background-color: #ff3041;
+border: none;
+cursor: pointer;
+padding: 10px 20px;
+border-radius: 5px;
+ }
+.Filters button.active {
+  font-weight: bold;
+  color: #0084f5;
+  border-bottom: 2px solid #0084f5;
 }
